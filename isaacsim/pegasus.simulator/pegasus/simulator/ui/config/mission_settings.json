@@ -1,0 +1,11 @@
+{
+    "seed": 0,
+    "mission_type": "Static",
+    "obstacles_count": 0,
+    "obstacles_distance": 0,
+    "missions_count": 1,
+    "mines_count": 0,
+    "mines_distance": 0,
+    "garbage_count": 0,
+    "garbage_distance": 0
+}

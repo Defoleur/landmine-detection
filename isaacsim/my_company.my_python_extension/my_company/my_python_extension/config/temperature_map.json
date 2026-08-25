@@ -1,0 +1,8 @@
+{
+    "UNLABELED": 20,
+    "grass": 60,
+    "road": 80,
+    "tree": 90,
+    "quadrotor": 150,
+    "mine": 240
+}
