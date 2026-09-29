@@ -1,0 +1,29 @@
+experiment:
+  name: rgb_phase1
+  seed: 42
+  dataset_version: dataset_rgb_lstm_20260910_182146
+  split_version: spatial_blocks_v001
+data:
+  dataset_root: ../datasets/dataset_rgb_lstm_20260910_182146
+  tile_size: 640
+  spatial_block_size: 10.0
+  empty_labels_are_verified_negative: true
+rgb:
+  input_channels: 4
+  backbone: resnet18
+  pretrained: true
+  validity_threshold: 0.50
+features:
+  scales: ["1/2", "1/4", "1/8"]
+  channels: [32, 64, 128]
+training:
+  optimizer: adamw
+  effective_batch_size: 8
+  weight_decay: 0.0001
+  new_component_lr: 0.0003
+  pretrained_lr: 0.00003
+  warmup_epochs: 5
+  max_epochs: 100
+loss:
+  type: masked_bce
+  dice_enabled: false

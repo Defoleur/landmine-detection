@@ -1,0 +1,7 @@
+sequence_length: 12
+conditions: [winter_morning, winter_day, winter_evening, spring_morning, spring_day, spring_evening, summer_morning, summer_day, summer_evening, autumn_morning, autumn_day, autumn_evening]
+dataset_root: datasets/dataset_thermal_points_20260920_151536
+processed_root: datasets/dataset_thermal_points_20260920_151536_processed
+image_normalization:
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]

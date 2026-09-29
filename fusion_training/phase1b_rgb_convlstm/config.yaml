@@ -1,0 +1,27 @@
+experiment:
+  name: rgb_phase1b_points
+  seed: 42
+  dataset_version: dataset_points_main_20260916_185625
+model:
+  sequence_length: 12
+  target_condition: autumn_day
+  use_condition_present: false
+  temporal_mean: false
+  scales:
+    "1/2": {input_channels: 32, hidden_channels: 32, kernel_size: 3}
+    "1/4": {input_channels: 64, hidden_channels: 64, kernel_size: 3}
+    "1/8": {input_channels: 128, hidden_channels: 128, kernel_size: 3}
+data:
+  tile_size: 640
+  batch_size: 1
+  workers: 0
+training:
+  stage: temporal_only
+  epochs: 50
+  weight_decay: 0.0001
+  temporal_lr: 0.0003
+  decoder_lr: 0.0001
+  rgb_encoder_lr: 0.00001
+  max_grad_norm: 1.0
+loss:
+  type: masked_bce

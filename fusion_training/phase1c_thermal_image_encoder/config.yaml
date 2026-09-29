@@ -1,0 +1,18 @@
+experiment:
+  name: image_phase1c
+  seed: 42
+  dataset_version: thermal_landmine_splits_split_1_processed_images
+data:
+  dataset_root: datasets/thermal_landmine_splits/split_1
+  processed_root: datasets/thermal_landmine_splits/split_1_processed
+  manifest: phase1c_thermal_image_encoder/artifacts/image_manifest.jsonl
+  tile_size: 640
+model:
+  pretrained: false
+training:
+  batch_size: 8
+  epochs: 50
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  max_grad_norm: 1.0
+  num_workers: 4
