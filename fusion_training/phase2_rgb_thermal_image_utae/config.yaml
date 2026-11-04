@@ -1,0 +1,11 @@
+spec_version: "1.0"
+modalities: [rgb, thermal]
+input_channels: {rgb: 3, thermal: 3}
+model:
+  common_channels: {2: 32, 4: 64, 8: 128}
+  heads: 4
+  key_dim: 8
+  fusion: masked_gated_sum
+loss:
+  bce_weight: 1.0
+  dice_weight: 0.0

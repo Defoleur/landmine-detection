@@ -1,0 +1,11 @@
+spec_version: "1.0"
+model:
+  common_channels: {2: 32, 4: 64, 8: 128}
+  heads: 4
+  key_dim: 8
+  temporal_aggregation: attention
+  time_feature_dim: 6
+training:
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  gradient_clip_norm: 1.0

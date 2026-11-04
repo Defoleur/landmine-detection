@@ -1,0 +1,17 @@
+{
+  "dataset": "datasets/dataset_full_map_20261019_181935",
+  "map_images": "map/dataset_full_map_20261019_181935",
+  "checkpoint": "phase2_rgb_thermal_image_utae/artifacts/run_trees_garbage_fusion_utae/epochs/epoch_0032/checkpoint.pt",
+  "map_size": [
+    10001,
+    10001
+  ],
+  "world_x": [
+    15.0,
+    115.0
+  ],
+  "world_y": [
+    -50.0,
+    50.0
+  ]
+}

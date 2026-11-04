@@ -1,0 +1,7 @@
+spec_version: "1.0"
+input_channels: 3
+model:
+  common_channels: {2: 32, 4: 64, 8: 128}
+  heads: 4
+  key_dim: 8
+  temporal_aggregation: attention
